@@ -1,0 +1,84 @@
+.containerss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  /* background-color: #f7f6f6; */
+}
+h1 {
+  color: rgb(23, 6, 61);
+}
+
+.box {
+  width: 350px;
+  padding: 30px;
+  background: rgba(218, 217, 217, 0.829);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  font-style: italic;
+  width: 90%;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #cecece;
+  border-radius: 15px;
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.1),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  transition: 0.4s;
+}
+.input:hover {
+  background-color: rgb(198, 230, 248);
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(13, 6, 114);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.1),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  transition: 0.4s;
+}
+.login-btn:hover {
+  background-color: rgb(51, 58, 151);
+  transform: scale(1.03);
+}
+.login-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.login-btn:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
+}

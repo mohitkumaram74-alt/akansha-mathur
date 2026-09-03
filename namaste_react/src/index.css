@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+
+  overflow-x: hidden;
+
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 40px;
+
+  background: #ffffff;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  transition: 0.4s;
+}
+
+.dark-nav {
+  background: #1f1f1f;
+}
+
+.logo img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.navs ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navs ul li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #222;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #ff6b35;
+}
+
+.dark-nav .link,
+.dark-nav li {
+  color: white;
+}
+
+.dark-nav .link:hover {
+  color: #ff6b35;
+}
+
+/* Login Button */
+
+.akku {
+  border: none;
+  outline: none;
+
+  background: #ff6b35;
+  color: white;
+
+  padding: 10px 22px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.akku:hover {
+  background: #ff4d0d;
+  transform: translateY(-3px);
+}
+
+/* Theme Button */
+
+.theme-btn {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  transform: rotate(25deg) scale(1.15);
+}

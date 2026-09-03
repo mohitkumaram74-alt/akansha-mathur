@@ -1,0 +1,31 @@
+.contanire {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px;
+}
+.box-contanire {
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+
+  background-color: rgba(224, 223, 223, 0.927);
+  height: 300px;
+  margin: 30px;
+}
+.mohit {
+  width: 150px;
+  background-color: rgba(200, 200, 200, 0.89);
+  height: 100px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.mohitk {
+  width: 90px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(206, 205, 205, 0.924);
+  height: 20px;
+}
