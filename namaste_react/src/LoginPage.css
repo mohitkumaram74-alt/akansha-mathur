@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  /* margin-top: 10%; */
+  min-height: calc(100vh - 100px);
+  transition: 0.3s;
+
   /* background-color: #f7f6f6; */
 }
 h2 {
@@ -43,7 +46,7 @@ h2 {
   border-radius: 5px;
 }
 .login-btn {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   margin: 10px;
   background-color: rgb(0, 119, 255);
@@ -52,6 +55,8 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  position: relative;
+  overflow: hidden;
 }
 .login-btn:hover {
   background-color: rgb(71, 167, 206);
@@ -93,4 +98,37 @@ h2 {
   to {
     left: 150%;
   }
+}
+/* DARK MODE */
+
+.containers.dark {
+  background-color: #121212;
+  color: white;
+  min-height: calc(100vh - 100px);
+}
+
+.containers.dark .box {
+  background-color: #252525;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+.containers.dark h1 {
+  color: white;
+}
+.containers.dark h2 {
+  color: white;
+}
+
+.containers.dark .input {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.containers.dark .input::placeholder {
+  color: #bbb;
+}
+
+.containers.dark .red {
+  color: white;
 }

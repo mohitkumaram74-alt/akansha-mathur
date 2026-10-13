@@ -1,13 +1,15 @@
 import "./Register.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "./ThemeContext";
 function RegisterUser() {
   const [submit, setsubmit] = useState();
+  const { darkMode } = useContext(ThemeContext);
   const press = () => {
     setsubmit(alert("done"));
   };
   return (
-    <div className="containerss">
+    <div className={`containers ${darkMode ? "dark" : ""}`}>
       <div className="box">
         <h1>REGISTER YOUR ACCOUNT</h1>
 

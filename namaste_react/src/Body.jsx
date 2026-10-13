@@ -20,7 +20,9 @@ export default function Body() {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.45970&lng=77.02820&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
     );
     const response = await data.json();
-    console.log(response.data.cards[2]);
+    console.log(
+      response.data.cards[1].card.card.gridElements.infoWithStyle.restaurants,
+    );
 
     setResturant(
       response.data.cards[1].card.card.gridElements.infoWithStyle.restaurants,

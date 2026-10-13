@@ -1,14 +1,16 @@
 import "./LoginPage.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import RegisterUser from "./RegisterUser";
+import { ThemeContext } from "./ThemeContext";
 function Login() {
   const [submit, setsubmit] = useState();
+  const { darkMode } = useContext(ThemeContext);
   const press = () => {
     setsubmit(alert("done"));
   };
   return (
-    <div className="containers">
+    <div className={`containers ${darkMode ? "dark" : ""}`}>
       <div className="box">
         <img src="login.png" alt="" className="jpg" />
         <h1>Welcome Back</h1>

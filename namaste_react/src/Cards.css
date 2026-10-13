@@ -97,7 +97,7 @@
 
   max-width: 280px;
 
-  background: #ff4d0d;
+  background: #f7f7f7;
 
   border-radius: 18px;
 
@@ -112,6 +112,8 @@
   transform: translateY(-10px);
 
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  background: #ff4d0d;
+  transform: translateY(-3px);
 }
 
 .dark .card {
@@ -130,15 +132,18 @@
 
 .card h1 {
   font-size: 22px;
-  color: #ece7e7;
+  color: #0e0d0d;
   margin: 12px;
 }
-
+/* .card h4:hover {
+  color: #f5f1ef;
+  transition: 0.3s;
+} */
 .card h4 {
   margin-left: 12px;
   margin-bottom: 10px;
 
-  color: #f8f8f8;
+  color: #070707;
 
   font-size: 15px;
 }

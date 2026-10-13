@@ -1,9 +1,12 @@
 import "./LoginPage.css";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 import { Link } from "react-router-dom";
 function ForgetPassword() {
+  const { darkMode } = useContext(ThemeContext);
   return (
-    <div className="containers">
+    <div className={`containers ${darkMode ? "dark" : ""}`}>
       <div className="box">
         <img src="pass.jpg" alt="" className="jpg" />
         <h2>Forgot Password </h2>
