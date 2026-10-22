@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [react()],
   plugins: [react(), tailwindcss()],
 
   server: {
@@ -12,6 +11,10 @@ export default defineConfig({
         target: "https://www.swiggy.com",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/swiggy-api/, ""),
+      },
+      "/api": {
+        target: "http://localhost:8000",
+        changeOrigin: true,
       },
     },
   },
